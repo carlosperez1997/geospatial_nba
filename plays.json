@@ -1,0 +1,4704 @@
+{
+   "plays":[
+      {
+         "id":"4008285092",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Andrew Bogut makes two point shot (Stephen Curry assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2747",
+            "name":"Andrew Bogut"
+         },
+         "coordinate":{
+            "x":25,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"118",
+            "txt":"Alley Oop Dunk Shot"
+         }
+      },
+      {
+         "id":"4008285093",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"LeBron James makes two point shot (Kevin Love assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":24,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"126",
+            "txt":"Layup Driving Reverse"
+         }
+      },
+      {
+         "id":"4008285094",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Stephen Curry makes 28-foot  three point jumper ",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":13,
+            "y":25
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"4008285095",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Kyrie Irving  misses driving layup",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":24,
+            "y":2
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"110",
+            "txt":"Driving Layup Shot"
+         }
+      },
+      {
+         "id":"4008285097",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Klay Thompson makes 19-foot two point shot",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":11,
+            "y":12
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"131",
+            "txt":"Pullup Jump Shot"
+         }
+      },
+      {
+         "id":"4008285098",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Kevin Love  misses 22-foot jumper",
+         "homeAway":"home",
+         "athlete":{
+            "id":"3449",
+            "name":"Kevin Love"
+         },
+         "coordinate":{
+            "x":23,
+            "y":22
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850910",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Klay Thompson makes 24-foot  three point jumper  (Draymond Green assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":42,
+            "y":18
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850916",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Stephen Curry makes two point shot",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":23,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"109",
+            "txt":"Running Layup Shot"
+         }
+      },
+      {
+         "id":"40082850917",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Kyrie Irving  misses two point shot",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":25,
+            "y":5
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"130",
+            "txt":"Floating Jump Shot"
+         }
+      },
+      {
+         "id":"40082850919",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Klay Thompson  misses 24-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":23,
+            "y":24
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850921",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Timofey Mozgov makes 6-foot two point shot (LeBron James assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"4298",
+            "name":"Timofey Mozgov"
+         },
+         "coordinate":{
+            "x":23,
+            "y":6
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"93",
+            "txt":"Hook Shot"
+         }
+      },
+      {
+         "id":"40082850923",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Andrew Bogut misses free throw 1 of 2",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2747",
+            "name":"Andrew Bogut"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"40082850925",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Andrew Bogut misses free throw 2 of 2",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2747",
+            "name":"Andrew Bogut"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"40082850928",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"LeBron James  misses 25-foot three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":20,
+            "y":24
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850930",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Draymond Green  misses 25-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":12,
+            "y":21
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850934",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Andrew Bogut  misses 6-foot two point shot",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2747",
+            "name":"Andrew Bogut"
+         },
+         "coordinate":{
+            "x":27,
+            "y":5
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"130",
+            "txt":"Floating Jump Shot"
+         }
+      },
+      {
+         "id":"40082850937",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"J.R. Smith misses free throw 1 of 2",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"40082850939",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"J.R. Smith makes free throw 2 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"40082850941",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Harrison Barnes makes 27-foot  three point jumper  (Draymond Green assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6578",
+            "name":"Harrison Barnes"
+         },
+         "coordinate":{
+            "x":1,
+            "y":12
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850942",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"J.R. Smith  misses two point shot",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":25,
+            "y":4
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"130",
+            "txt":"Floating Jump Shot"
+         }
+      },
+      {
+         "id":"40082850944",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Timofey Mozgov makes 17-foot jumper (J.R. Smith assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"4298",
+            "name":"Timofey Mozgov"
+         },
+         "coordinate":{
+            "x":19,
+            "y":15
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850945",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Stephen Curry  misses 25-foot  ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":6,
+            "y":16
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"132",
+            "txt":"Step Back Jump Shot"
+         }
+      },
+      {
+         "id":"40082850947",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Timofey Mozgov makes two point shot (LeBron James assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"4298",
+            "name":"Timofey Mozgov"
+         },
+         "coordinate":{
+            "x":19,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"93",
+            "txt":"Hook Shot"
+         }
+      },
+      {
+         "id":"40082850948",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Draymond Green  misses layup",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":24,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"95",
+            "txt":"Layup Shot"
+         }
+      },
+      {
+         "id":"40082850950",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"J.R. Smith makes 6-foot two point shot",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":31,
+            "y":2
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"131",
+            "txt":"Pullup Jump Shot"
+         }
+      },
+      {
+         "id":"40082850955",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Stephen Curry makes 24-foot  three point jumper  (Andre Iguodala assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":46,
+            "y":12
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850956",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Draymond Green blocks Timofey Mozgov's   ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"4298",
+            "name":"Timofey Mozgov"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"109",
+            "txt":"Running Layup Shot"
+         }
+      },
+      {
+         "id":"40082850957",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Andre Iguodala makes  three point jumper  (Draymond Green assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2386",
+            "name":"Andre Iguodala"
+         },
+         "coordinate":{
+            "x":48,
+            "y":-1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850963",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"LeBron James  misses 20-foot jumper",
+         "homeAway":"home",
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":14,
+            "y":17
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850969",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"LeBron James makes layup (Matthew Dellavedova assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":24,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"95",
+            "txt":"Layup Shot"
+         }
+      },
+      {
+         "id":"40082850970",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Festus Ezeli makes two point shot (Draymond Green assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6587",
+            "name":"Festus Ezeli"
+         },
+         "coordinate":{
+            "x":25,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"118",
+            "txt":"Alley Oop Dunk Shot"
+         }
+      },
+      {
+         "id":"40082850971",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"J.R. Smith makes two point shot",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":42,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"132",
+            "txt":"Step Back Jump Shot"
+         }
+      },
+      {
+         "id":"40082850972",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Festus Ezeli makes dunk (Draymond Green assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6587",
+            "name":"Festus Ezeli"
+         },
+         "coordinate":{
+            "x":25,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"96",
+            "txt":"Dunk Shot"
+         }
+      },
+      {
+         "id":"40082850973",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Matthew Dellavedova  misses 6-foot step back jumpshot",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2489716",
+            "name":"Matthew Dellavedova"
+         },
+         "coordinate":{
+            "x":23,
+            "y":6
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"132",
+            "txt":"Step Back Jump Shot"
+         }
+      },
+      {
+         "id":"40082850975",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Kevin Love  misses step back jumpshot",
+         "homeAway":"home",
+         "athlete":{
+            "id":"3449",
+            "name":"Kevin Love"
+         },
+         "coordinate":{
+            "x":34,
+            "y":-1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"132",
+            "txt":"Step Back Jump Shot"
+         }
+      },
+      {
+         "id":"40082850978",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Draymond Green misses free throw 1 of 2",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"40082850981",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Draymond Green makes free throw 2 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"40082850985",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"J.R. Smith makes 11-foot two point shot",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":18,
+            "y":8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"114",
+            "txt":"Turnaround Jump Shot"
+         }
+      },
+      {
+         "id":"40082850990",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"J.R. Smith makes two point shot (LeBron James assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":25,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"112",
+            "txt":"Reverse Layup Shot"
+         }
+      },
+      {
+         "id":"40082850991",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Stephen Curry makes 27-foot  three point jumper ",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":20,
+            "y":27
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850995",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Stephen Curry makes 24-foot  three point jumper  (Leandro Barbosa assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":46,
+            "y":12
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"40082850996",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"LeBron James  misses driving layup",
+         "homeAway":"home",
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":26,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"110",
+            "txt":"Driving Layup Shot"
+         }
+      },
+      {
+         "id":"400828509101",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"LeBron James makes two point shot",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":25,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"116",
+            "txt":"Running Dunk Shot"
+         }
+      },
+      {
+         "id":"400828509102",
+         "period":{
+            "number":1,
+            "displayValue":"1st Quarter"
+         },
+         "text":"Harrison Barnes  misses three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6578",
+            "name":"Harrison Barnes"
+         },
+         "coordinate":{
+            "x":48,
+            "y":-1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509109",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Kyrie Irving  misses 21-foot jumper",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":20,
+            "y":20
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509111",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Harrison Barnes  misses 19-foot jumper",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6578",
+            "name":"Harrison Barnes"
+         },
+         "coordinate":{
+            "x":14,
+            "y":16
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509113",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Iman Shumpert makes 18-foot jumper",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6468",
+            "name":"Iman Shumpert"
+         },
+         "coordinate":{
+            "x":16,
+            "y":16
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509114",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Harrison Barnes makes 9-foot two point shot",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6578",
+            "name":"Harrison Barnes"
+         },
+         "coordinate":{
+            "x":32,
+            "y":6
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"137",
+            "txt":"Turnaround Fade Away Jump Shot"
+         }
+      },
+      {
+         "id":"400828509115",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Kyrie Irving  misses 8-foot two point shot",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":28,
+            "y":8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"130",
+            "txt":"Floating Jump Shot"
+         }
+      },
+      {
+         "id":"400828509118",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Andre Iguodala makes two point shot (Leandro Barbosa assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2386",
+            "name":"Andre Iguodala"
+         },
+         "coordinate":{
+            "x":25,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"116",
+            "txt":"Running Dunk Shot"
+         }
+      },
+      {
+         "id":"400828509123",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Anderson Varejao makes 15-foot jumper (Kyrie Irving assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2419",
+            "name":"Anderson Varejao"
+         },
+         "coordinate":{
+            "x":31,
+            "y":14
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509128",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Kevin Love  misses three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"3449",
+            "name":"Kevin Love"
+         },
+         "coordinate":{
+            "x":49,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509130",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Draymond Green makes 24-foot  three point jumper  (Klay Thompson assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":16,
+            "y":23
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509131",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Anderson Varejao makes 6-foot two point shot (Kyrie Irving assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2419",
+            "name":"Anderson Varejao"
+         },
+         "coordinate":{
+            "x":23,
+            "y":6
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"130",
+            "txt":"Floating Jump Shot"
+         }
+      },
+      {
+         "id":"400828509132",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Shaun Livingston makes jumper",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2393",
+            "name":"Shaun Livingston"
+         },
+         "coordinate":{
+            "x":38,
+            "y":-2
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509137",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"LeBron James makes driving layup",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":23,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"110",
+            "txt":"Driving Layup Shot"
+         }
+      },
+      {
+         "id":"400828509138",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Klay Thompson  misses 11-foot jumper",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":34,
+            "y":6
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509140",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Kyrie Irving makes 18-foot jumper",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":10,
+            "y":10
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509141",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Shaun Livingston makes layup (Draymond Green assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2393",
+            "name":"Shaun Livingston"
+         },
+         "coordinate":{
+            "x":24,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"95",
+            "txt":"Layup Shot"
+         }
+      },
+      {
+         "id":"400828509142",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Anderson Varejao  misses 16-foot jumper",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2419",
+            "name":"Anderson Varejao"
+         },
+         "coordinate":{
+            "x":24,
+            "y":16
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509148",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"LeBron James  misses 10-foot jump bank shot",
+         "homeAway":"home",
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":16,
+            "y":4
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"122",
+            "txt":"Jump Shot Bank"
+         }
+      },
+      {
+         "id":"400828509150",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Andre Iguodala makes dunk (Stephen Curry assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2386",
+            "name":"Andre Iguodala"
+         },
+         "coordinate":{
+            "x":25,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"96",
+            "txt":"Dunk Shot"
+         }
+      },
+      {
+         "id":"400828509152",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Richard Jefferson misses free throw 1 of 2",
+         "homeAway":"home",
+         "athlete":{
+            "id":"1006",
+            "name":"Richard Jefferson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509154",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Richard Jefferson makes free throw 2 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1006",
+            "name":"Richard Jefferson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509156",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Draymond Green makes 4-foot two point shot (Shaun Livingston assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":27,
+            "y":4
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"122",
+            "txt":"Jump Shot Bank"
+         }
+      },
+      {
+         "id":"400828509158",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Draymond Green makes free throw 1 of 1",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"97",
+            "txt":"Free Throw - 1 of 1"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509160",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Kyrie Irving  misses 17-foot jumper",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":8,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509166",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Andre Iguodala makes two point shot (Shaun Livingston assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2386",
+            "name":"Andre Iguodala"
+         },
+         "coordinate":{
+            "x":25,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"116",
+            "txt":"Running Dunk Shot"
+         }
+      },
+      {
+         "id":"400828509172",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Kyrie Irving  misses 26-foot three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":6,
+            "y":17
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509174",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Stephen Curry makes layup (Klay Thompson assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":24,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"95",
+            "txt":"Layup Shot"
+         }
+      },
+      {
+         "id":"400828509176",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Stephen Curry makes free throw 1 of 1",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"97",
+            "txt":"Free Throw - 1 of 1"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509178",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Kyrie Irving  misses two point jumper",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":37,
+            "y":-1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"131",
+            "txt":"Pullup Jump Shot"
+         }
+      },
+      {
+         "id":"400828509182",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Stephen Curry  misses 4-foot  ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":24,
+            "y":4
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"134",
+            "txt":"Driving Jump Shot Bank"
+         }
+      },
+      {
+         "id":"400828509185",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Stephen Curry makes two point shot",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"109",
+            "txt":"Running Layup Shot"
+         }
+      },
+      {
+         "id":"400828509186",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"J.R. Smith makes 6-foot two point shot",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":24,
+            "y":6
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"130",
+            "txt":"Floating Jump Shot"
+         }
+      },
+      {
+         "id":"400828509187",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Klay Thompson makes 10-foot two point shot",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":35,
+            "y":3
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"114",
+            "txt":"Turnaround Jump Shot"
+         }
+      },
+      {
+         "id":"400828509188",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Draymond Green blocks LeBron James's  jumper",
+         "homeAway":"home",
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":25,
+            "y":3
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509190",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Klay Thompson  misses 23-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":48,
+            "y":3
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509193",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"J.R. Smith misses free throw 1 of 2",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509202",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"J.R. Smith makes free throw 2 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509205",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Klay Thompson makes free throw 1 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509207",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Klay Thompson makes free throw 2 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509210",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"J.R. Smith  misses 15-foot jumper",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":40,
+            "y":3
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509212",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"LeBron James  misses layup",
+         "homeAway":"home",
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":25,
+            "y":3
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"95",
+            "txt":"Layup Shot"
+         }
+      },
+      {
+         "id":"400828509214",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Ian Clark makes  three point jumper  (Andre Iguodala assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2489785",
+            "name":"Ian Clark"
+         },
+         "coordinate":{
+            "x":48,
+            "y":-1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509216",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Tristan Thompson makes free throw 1 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6474",
+            "name":"Tristan Thompson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509218",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Tristan Thompson makes free throw 2 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6474",
+            "name":"Tristan Thompson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509221",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Draymond Green misses free throw 1 of 2",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509224",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Draymond Green makes free throw 2 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509230",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"LeBron James  misses 7-foot  ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":22,
+            "y":6
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"137",
+            "txt":"Turnaround Fade Away Jump Shot"
+         }
+      },
+      {
+         "id":"400828509233",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Klay Thompson makes free throw 1 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509235",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Klay Thompson makes free throw 2 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509238",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"J.R. Smith misses free throw 1 of 2",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509240",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"J.R. Smith misses free throw 2 of 2",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509243",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Ian Clark  misses 27-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2489785",
+            "name":"Ian Clark"
+         },
+         "coordinate":{
+            "x":10,
+            "y":23
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509245",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Kevin Love makes 24-foot  three point jumper  (Matthew Dellavedova assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3449",
+            "name":"Kevin Love"
+         },
+         "coordinate":{
+            "x":23,
+            "y":24
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509247",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Draymond Green makes 24-foot  three point jumper  (Andre Iguodala assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":45,
+            "y":13
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509248",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"J.R. Smith makes 5-foot two point shot",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":29,
+            "y":2
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"130",
+            "txt":"Floating Jump Shot"
+         }
+      },
+      {
+         "id":"400828509254",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"LeBron James makes driving layup",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":24,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"110",
+            "txt":"Driving Layup Shot"
+         }
+      },
+      {
+         "id":"400828509255",
+         "period":{
+            "number":2,
+            "displayValue":"2nd Quarter"
+         },
+         "text":"Klay Thompson  misses 63-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":46,
+            "y":59
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509262",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Kevin Love  misses 24-foot three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"3449",
+            "name":"Kevin Love"
+         },
+         "coordinate":{
+            "x":31,
+            "y":24
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509264",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Klay Thompson makes 23-foot jumper (Stephen Curry assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":5,
+            "y":10
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509266",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"J.R. Smith  misses 18-foot jumper",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2444",
+            "name":"JR Smith"
+         },
+         "coordinate":{
+            "x":40,
+            "y":11
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509270",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Harrison Barnes makes free throw 2 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6578",
+            "name":"Harrison Barnes"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"104",
+            "txt":"Free Throw - Flagrant 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509272",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Harrison Barnes makes free throw 1 of 1",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6578",
+            "name":"Harrison Barnes"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"105",
+            "txt":"Free Throw - Flagrant 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509276",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Stephen Curry makes 24-foot  three point jumper  (Draymond Green assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":38,
+            "y":20
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509279",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"LeBron James  misses 25-foot three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":23,
+            "y":25
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509282",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Klay Thompson  misses 27-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6475",
+            "name":"Klay Thompson"
+         },
+         "coordinate":{
+            "x":4,
+            "y":16
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509284",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Stephen Curry  misses 26-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":3,
+            "y":13
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509290",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Draymond Green  misses 28-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":8,
+            "y":23
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509292",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"LeBron James  misses 26-foot three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":4,
+            "y":16
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509294",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Kevin Love blocks Draymond Green 's 4-foot  jumper",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":27,
+            "y":3
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509296",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Kyrie Irving makes 25-foot  three point jumper  (Kevin Love assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":45,
+            "y":14
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509302",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Kyrie Irving makes 15-foot jumper",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":38,
+            "y":9
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509303",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Draymond Green makes 5-foot two point shot",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":24,
+            "y":5
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"130",
+            "txt":"Floating Jump Shot"
+         }
+      },
+      {
+         "id":"400828509305",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Iman Shumpert makes driving layup",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6468",
+            "name":"Iman Shumpert"
+         },
+         "coordinate":{
+            "x":24,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"110",
+            "txt":"Driving Layup Shot"
+         }
+      },
+      {
+         "id":"400828509307",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Draymond Green makes free throw 1 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509309",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Draymond Green misses free throw 2 of 2",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509312",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Stephen Curry  misses 26-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":4,
+            "y":15
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509315",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Timofey Mozgov  misses layup",
+         "homeAway":"home",
+         "athlete":{
+            "id":"4298",
+            "name":"Timofey Mozgov"
+         },
+         "coordinate":{
+            "x":24,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"95",
+            "txt":"Layup Shot"
+         }
+      },
+      {
+         "id":"400828509317",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Kyrie Irving  misses 26-foot three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":34,
+            "y":25
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509319",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Timofey Mozgov blocks Draymond Green 's 4-foot  layup",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":27,
+            "y":3
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"95",
+            "txt":"Layup Shot"
+         }
+      },
+      {
+         "id":"400828509321",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Harrison Barnes  misses 26-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6578",
+            "name":"Harrison Barnes"
+         },
+         "coordinate":{
+            "x":4,
+            "y":14
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509324",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Andrew Bogut  misses 9-foot jumper",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2747",
+            "name":"Andrew Bogut"
+         },
+         "coordinate":{
+            "x":16,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509329",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Timofey Mozgov  misses  ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"4298",
+            "name":"Timofey Mozgov"
+         },
+         "coordinate":{
+            "x":25,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"96",
+            "txt":"Dunk Shot"
+         }
+      },
+      {
+         "id":"400828509331",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Andre Iguodala  misses 23-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2386",
+            "name":"Andre Iguodala"
+         },
+         "coordinate":{
+            "x":47,
+            "y":4
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509334",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Kyrie Irving makes technical free throw",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6442",
+            "name":"Kyrie Irving"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"103",
+            "txt":"Free Throw - Technical"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509344",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Stephen Curry makes 25-foot  three point jumper  (Andre Iguodala assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":1,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509345",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Iman Shumpert  misses 25-foot three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6468",
+            "name":"Iman Shumpert"
+         },
+         "coordinate":{
+            "x":41,
+            "y":20
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509349",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Stephen Curry  misses 29-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":12,
+            "y":26
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509351",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"LeBron James makes two point shot",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":24,
+            "y":2
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"126",
+            "txt":"Layup Driving Reverse"
+         }
+      },
+      {
+         "id":"400828509352",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Stephen Curry makes two point shot (Draymond Green assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":24,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"112",
+            "txt":"Reverse Layup Shot"
+         }
+      },
+      {
+         "id":"400828509353",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"James Jones makes 10-foot jumper (Kyrie Irving assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2009",
+            "name":"James Jones"
+         },
+         "coordinate":{
+            "x":35,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509360",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"James Jones makes free throw 1 of 1",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2009",
+            "name":"James Jones"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"97",
+            "txt":"Free Throw - 1 of 1"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509363",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Stephen Curry makes free throw 1 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509365",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Stephen Curry makes free throw 2 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509370",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Stephen Curry makes technical free throw",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"103",
+            "txt":"Free Throw - Technical"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509373",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"LeBron James makes free throw 1 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509375",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"LeBron James makes free throw 2 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509378",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Draymond Green makes driving layup",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6589",
+            "name":"Draymond Green"
+         },
+         "coordinate":{
+            "x":24,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"110",
+            "txt":"Driving Layup Shot"
+         }
+      },
+      {
+         "id":"400828509379",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Iman Shumpert  misses 19-foot step back jumpshot",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6468",
+            "name":"Iman Shumpert"
+         },
+         "coordinate":{
+            "x":16,
+            "y":16
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"132",
+            "txt":"Step Back Jump Shot"
+         }
+      },
+      {
+         "id":"400828509382",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Andre Iguodala makes free throw 1 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2386",
+            "name":"Andre Iguodala"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509384",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Andre Iguodala makes free throw 2 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2386",
+            "name":"Andre Iguodala"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509386",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Matthew Dellavedova makes 26-foot  three point jumper  (LeBron James assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2489716",
+            "name":"Matthew Dellavedova"
+         },
+         "coordinate":{
+            "x":48,
+            "y":13
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509387",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Andre Iguodala makes  three point jumper  (Draymond Green assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2386",
+            "name":"Andre Iguodala"
+         },
+         "coordinate":{
+            "x":1,
+            "y":-1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509388",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Matthew Dellavedova  misses 14-foot jump bank shot",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2489716",
+            "name":"Matthew Dellavedova"
+         },
+         "coordinate":{
+            "x":13,
+            "y":6
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"122",
+            "txt":"Jump Shot Bank"
+         }
+      },
+      {
+         "id":"400828509390",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"LeBron James blocks Leandro Barbosa's  shot",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2166",
+            "name":"Leandro Barbosa"
+         },
+         "coordinate":{
+            "x":25,
+            "y":3
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"109",
+            "txt":"Running Layup Shot"
+         }
+      },
+      {
+         "id":"400828509392",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Leandro Barbosa  misses three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2166",
+            "name":"Leandro Barbosa"
+         },
+         "coordinate":{
+            "x":1,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509394",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Leandro Barbosa makes 20-foot jumper",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2166",
+            "name":"Leandro Barbosa"
+         },
+         "coordinate":{
+            "x":9,
+            "y":12
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509395",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"LeBron James makes driving layup (Matthew Dellavedova assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1966",
+            "name":"LeBron James"
+         },
+         "coordinate":{
+            "x":24,
+            "y":-1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"110",
+            "txt":"Driving Layup Shot"
+         }
+      },
+      {
+         "id":"400828509396",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Stephen Curry makes 26-foot  three point jumper ",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":31,
+            "y":25
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509397",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Matthew Dellavedova makes 25-foot  three point jumper  (LeBron James assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2489716",
+            "name":"Matthew Dellavedova"
+         },
+         "coordinate":{
+            "x":13,
+            "y":22
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509398",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Stephen Curry  misses 25-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3975",
+            "name":"Stephen Curry"
+         },
+         "coordinate":{
+            "x":34,
+            "y":23
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509402",
+         "period":{
+            "number":3,
+            "displayValue":"3rd Quarter"
+         },
+         "text":"Leandro Barbosa  misses 26-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2166",
+            "name":"Leandro Barbosa"
+         },
+         "coordinate":{
+            "x":1,
+            "y":11
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509409",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Leandro Barbosa makes free throw 1 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2166",
+            "name":"Leandro Barbosa"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509411",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Leandro Barbosa makes free throw 2 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2166",
+            "name":"Leandro Barbosa"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509413",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Iman Shumpert makes jumper (Matthew Dellavedova assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6468",
+            "name":"Iman Shumpert"
+         },
+         "coordinate":{
+            "x":40,
+            "y":-2
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509414",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Andre Iguodala makes 24-foot  three point jumper ",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2386",
+            "name":"Andre Iguodala"
+         },
+         "coordinate":{
+            "x":35,
+            "y":22
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509416",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Andre Iguodala makes 25-foot  three point jumper  (Leandro Barbosa assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2386",
+            "name":"Andre Iguodala"
+         },
+         "coordinate":{
+            "x":41,
+            "y":19
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509420",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Matthew Dellavedova makes 23-foot jumper (Jared Cunningham assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2489716",
+            "name":"Matthew Dellavedova"
+         },
+         "coordinate":{
+            "x":7,
+            "y":14
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509422",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Harrison Barnes makes 17-foot jumper (Shaun Livingston assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6578",
+            "name":"Harrison Barnes"
+         },
+         "coordinate":{
+            "x":9,
+            "y":6
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509431",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Matthew Dellavedova  misses 15-foot two point shot",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2489716",
+            "name":"Matthew Dellavedova"
+         },
+         "coordinate":{
+            "x":35,
+            "y":12
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"130",
+            "txt":"Floating Jump Shot"
+         }
+      },
+      {
+         "id":"400828509433",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Harrison Barnes  misses 23-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"6578",
+            "name":"Harrison Barnes"
+         },
+         "coordinate":{
+            "x":48,
+            "y":2
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509440",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Iman Shumpert makes free throw 1 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6468",
+            "name":"Iman Shumpert"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509442",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Iman Shumpert misses free throw 2 of 2",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6468",
+            "name":"Iman Shumpert"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509445",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Jared Cunningham makes dunk (Matthew Dellavedova assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6582",
+            "name":"Jared Cunningham"
+         },
+         "coordinate":{
+            "x":25,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"96",
+            "txt":"Dunk Shot"
+         }
+      },
+      {
+         "id":"400828509446",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Marreese Speights  misses 18-foot jumper",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3460",
+            "name":"Marreese Speights"
+         },
+         "coordinate":{
+            "x":37,
+            "y":13
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509448",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Iman Shumpert makes driving layup",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6468",
+            "name":"Iman Shumpert"
+         },
+         "coordinate":{
+            "x":25,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"110",
+            "txt":"Driving Layup Shot"
+         }
+      },
+      {
+         "id":"400828509450",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Iman Shumpert makes free throw 1 of 1",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6468",
+            "name":"Iman Shumpert"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"97",
+            "txt":"Free Throw - 1 of 1"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509453",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Harrison Barnes makes 26-foot  three point jumper  (Ian Clark assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6578",
+            "name":"Harrison Barnes"
+         },
+         "coordinate":{
+            "x":8,
+            "y":19
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509455",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Marreese Speights makes 21-foot jumper (Shaun Livingston assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3460",
+            "name":"Marreese Speights"
+         },
+         "coordinate":{
+            "x":24,
+            "y":21
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509456",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Matthew Dellavedova makes 25-foot  three point jumper ",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2489716",
+            "name":"Matthew Dellavedova"
+         },
+         "coordinate":{
+            "x":14,
+            "y":22
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509464",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Richard Jefferson makes free throw 1 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1006",
+            "name":"Richard Jefferson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509466",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Richard Jefferson makes free throw 2 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1006",
+            "name":"Richard Jefferson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509469",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Marreese Speights  misses 16-foot jumper",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3460",
+            "name":"Marreese Speights"
+         },
+         "coordinate":{
+            "x":30,
+            "y":15
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509471",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Anderson Varejao  misses 8-foot two point shot",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2419",
+            "name":"Anderson Varejao"
+         },
+         "coordinate":{
+            "x":33,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"114",
+            "txt":"Turnaround Jump Shot"
+         }
+      },
+      {
+         "id":"400828509477",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Marreese Speights makes free throw 1 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3460",
+            "name":"Marreese Speights"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509479",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Marreese Speights makes free throw 2 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3460",
+            "name":"Marreese Speights"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509488",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Anderson Varejao makes free throw 1 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2419",
+            "name":"Anderson Varejao"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509490",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Anderson Varejao misses free throw 2 of 2",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2419",
+            "name":"Anderson Varejao"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509493",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Ian Clark  misses 14-foot jumper",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2489785",
+            "name":"Ian Clark"
+         },
+         "coordinate":{
+            "x":38,
+            "y":6
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509495",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Richard Jefferson makes 23-foot  three point jumper  (Anderson Varejao assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"1006",
+            "name":"Richard Jefferson"
+         },
+         "coordinate":{
+            "x":48,
+            "y":1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509496",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Leandro Barbosa makes jumper (Jason Thompson assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2166",
+            "name":"Leandro Barbosa"
+         },
+         "coordinate":{
+            "x":25,
+            "y":16
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509497",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Jared Cunningham  misses 6-foot jump bank shot",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6582",
+            "name":"Jared Cunningham"
+         },
+         "coordinate":{
+            "x":29,
+            "y":5
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"122",
+            "txt":"Jump Shot Bank"
+         }
+      },
+      {
+         "id":"400828509499",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Brandon Rush makes 25-foot  three point jumper  (Ian Clark assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3457",
+            "name":"Brandon Rush"
+         },
+         "coordinate":{
+            "x":37,
+            "y":22
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509500",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"James Jones makes 16-foot jumper (Matthew Dellavedova assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2009",
+            "name":"James Jones"
+         },
+         "coordinate":{
+            "x":39,
+            "y":8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509517",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Richard Jefferson blocks Brandon Rush's  layup",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3457",
+            "name":"Brandon Rush"
+         },
+         "coordinate":{
+            "x":28,
+            "y":0
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"110",
+            "txt":"Driving Layup Shot"
+         }
+      },
+      {
+         "id":"400828509503",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Marreese Speights  misses jumper",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3460",
+            "name":"Marreese Speights"
+         },
+         "coordinate":{
+            "x":42,
+            "y":-1
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509505",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Matthew Dellavedova  misses 25-foot three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2489716",
+            "name":"Matthew Dellavedova"
+         },
+         "coordinate":{
+            "x":8,
+            "y":19
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509507",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Brandon Rush  misses 26-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3457",
+            "name":"Brandon Rush"
+         },
+         "coordinate":{
+            "x":12,
+            "y":23
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509509",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"James Jones  misses 24-foot three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2009",
+            "name":"James Jones"
+         },
+         "coordinate":{
+            "x":44,
+            "y":15
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509511",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Ian Clark  misses 20-foot jumper",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2489785",
+            "name":"Ian Clark"
+         },
+         "coordinate":{
+            "x":15,
+            "y":17
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509521",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Jared Cunningham makes free throw 1 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6582",
+            "name":"Jared Cunningham"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509523",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Jared Cunningham makes free throw 2 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6582",
+            "name":"Jared Cunningham"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509526",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Jason Thompson makes free throw 1 of 2",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"3462",
+            "name":"Jason Thompson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509528",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Jason Thompson misses free throw 2 of 2",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3462",
+            "name":"Jason Thompson"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509532",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Leandro Barbosa makes two point shot (Brandon Rush assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2166",
+            "name":"Leandro Barbosa"
+         },
+         "coordinate":{
+            "x":25,
+            "y":2
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"109",
+            "txt":"Running Layup Shot"
+         }
+      },
+      {
+         "id":"400828509533",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"James Jones makes  three point jumper  (Anderson Varejao assists)",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2009",
+            "name":"James Jones"
+         },
+         "coordinate":{
+            "x":25,
+            "y":25
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509534",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Ian Clark makes 26-foot  three point jumper  (Leandro Barbosa assists)",
+         "homeAway":"away",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"2489785",
+            "name":"Ian Clark"
+         },
+         "coordinate":{
+            "x":9,
+            "y":20
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509535",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"James Jones  misses 26-foot three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"2009",
+            "name":"James Jones"
+         },
+         "coordinate":{
+            "x":1,
+            "y":11
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509537",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Ian Clark  misses 27-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2489785",
+            "name":"Ian Clark"
+         },
+         "coordinate":{
+            "x":6,
+            "y":18
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509540",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Jason Thompson  misses 10-foot step back jumpshot",
+         "homeAway":"away",
+         "athlete":{
+            "id":"3462",
+            "name":"Jason Thompson"
+         },
+         "coordinate":{
+            "x":34,
+            "y":5
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"132",
+            "txt":"Step Back Jump Shot"
+         }
+      },
+      {
+         "id":"400828509544",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Jared Cunningham misses free throw 1 of 2",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6582",
+            "name":"Jared Cunningham"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"98",
+            "txt":"Free Throw - 1 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509546",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Jared Cunningham makes free throw 2 of 2",
+         "homeAway":"home",
+         "scoringPlay":true,
+         "athlete":{
+            "id":"6582",
+            "name":"Jared Cunningham"
+         },
+         "coordinate":{
+            "x":25,
+            "y":-8
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"99",
+            "txt":"Free Throw - 2 of 2"
+         },
+         "isFreeThrow":true
+      },
+      {
+         "id":"400828509549",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Ian Clark  misses 27-foot three point jumper ",
+         "homeAway":"away",
+         "athlete":{
+            "id":"2489785",
+            "name":"Ian Clark"
+         },
+         "coordinate":{
+            "x":37,
+            "y":24
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      },
+      {
+         "id":"400828509552",
+         "period":{
+            "number":4,
+            "displayValue":"4th Quarter"
+         },
+         "text":"Jared Cunningham  misses 25-foot three point jumper ",
+         "homeAway":"home",
+         "athlete":{
+            "id":"6582",
+            "name":"Jared Cunningham"
+         },
+         "coordinate":{
+            "x":26,
+            "y":25
+         },
+         "shootingPlay":true,
+         "type":{
+            "id":"92",
+            "txt":"Jump Shot"
+         }
+      }
+   ]
+}

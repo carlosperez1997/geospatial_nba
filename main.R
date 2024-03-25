@@ -17,8 +17,8 @@ players <- get_players_info(json_data)
 plays <- json_data$events$moments
 
 # BALL + PLAYERS
-  ball_positions <- data.frame(play_id=NULL, moment_id=NULL, time=NULL, clock=NULL, x=NULL, y=NULL)
-  players_positions <- data.frame(play_id=NULL, moment_id=NULL, time=NULL, clock=NULL, player_id=NULL, x=NULL, y=NULL)
+  ball_positions <- data.frame(quarter=NULL, play_id=NULL, moment_id=NULL, time=NULL, clock=NULL, x=NULL, y=NULL)
+  players_positions <- data.frame(quarter=NULL, play_id=NULL, moment_id=NULL, time=NULL, clock=NULL, player_id=NULL, x=NULL, y=NULL)
 
   # progress_bar
   total_iterations <- length(plays)
@@ -36,9 +36,11 @@ plays <- json_data$events$moments
         
         moment <- plays[[id_play]][[id_moment]]
         
-        res <- get_moment_info(id_play, moment, ball_positions, players_positions)
-        ball_positions <- res[[1]]
-        players_positions <- res[[2]]
+        if (nrow(moment[[6]]) > 1) {
+          res <- get_moment_info(moment[[1]], id_play, moment, ball_positions, players_positions)
+          ball_positions <- res[[1]]
+          players_positions <- res[[2]]
+        }
       }
     }
     pb$tick()
@@ -46,7 +48,31 @@ plays <- json_data$events$moments
 
   # Close progress bar
   pb$close()
+  
+  write.csv(ball_positions, 'ball_positions.csv')
+  write.csv(players_positions, 'players_positions.csv')
 
+# ESPN PLAYS
+  DATA_DIR <- './'
+  
+  espn_plays <- data.frame(read.csv(file.path(DATA_DIR, 'plays.csv'))) %>% 
+    select(text, x, y, isFreeThrow, clck, prd, awyScr, hmScr)
+  espn_plays
+  
+  clock_time <- function(time_) {
+    sprintf("%02d:%02d",
+            floor(time_) %% 3600 %/% 60,
+            floor(time_) %% 60)
+  }
+  
+  ball_positions$clock <- clock_time(ball_positions$time)
+  ball_positions_ <- data.table(ball_positions)[, .SD[.N], by = c('quarter', 'clock')]
+  
+  players_positions$clock <- clock_time(players_positions$time)
+  
+  merge(espn_plays, ball_positions, by.x='clck', by.y='clock', all.x=T, all.y=F, suffixes=c("", "_ball"))
+  
+    
 # POINTS - Get last possesion
   ball_last_possession <- data.table(ball_positions)[, .SD[.N], by = play_id]
   
@@ -66,8 +92,9 @@ plays <- json_data$events$moments
   
   # Avoid free throws (and short plays)
   shooters[, diff_last_time := time - shift(time)]
-  shooters <- shooters[diff_last_time > 5.0]
-  shooters
+  final_shooters <- shooters[diff_last_time > 5.0]
+  final_shooters
+
 
 # LEBRON JAMES
   player_id_ <- players[players$lastname=="James", ]$playerid

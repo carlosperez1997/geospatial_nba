@@ -19,9 +19,9 @@ get_players_info <- function(json_data) {
 }
 
 # MOMENT INFO
-get_moment_info <- function(id_play, moment, ball_positions, players_positions) {
+get_moment_info <- function(quarter, id_play, moment, ball_positions, players_positions) {
   clock <- if (is.null(moment[[4]])) { 0 } else { moment[[4]] }
-  metadata <- data.frame(play_id = id_play,  moment_id = as.character(moment[[2]]), time=moment[[3]], clock=clock)
+  metadata <- data.frame(quarter = quarter, play_id = id_play,  moment_id = as.character(moment[[2]]), time=moment[[3]], clock=clock)
   
   ball_positions <- rbind(ball_positions, 
                           cbind( metadata, get_ball(moment[[6]][1,]))
