@@ -23,14 +23,15 @@ shots_multipolygon <- shots_made_sf %>%
   st_convex_hull() # Convert to multipolygon
 
 # Perform spatial intersection between points and court polygon
-court_bbox <- st_bbox(court_polygon)
-points_in_court <- st_intersection(court_bbox, shots_multipolygon)
+#court_bbox <- st_bbox(load_court())
+#points_in_court <- st_intersection(court_bbox, shots_multipolygon)
+points_in_court <- shots_multipolygon
 
 # Define custom colors for the gradient
-custom_colors <- c("green", "yellow", "red")
+custom_colors <- c("green", "yellow", "orange", "red")
 
 # Define breaks for the gradient
-breaks <- c(0, 1000, 2000, 3000, 4000)
+breaks <- c(500, 1000, 2500, 5000)
 
 points_in_court_ <- points_in_court %>% 
   filter(total_shots > 100) %>% 
@@ -47,7 +48,7 @@ combined_plot <- court_plot +
 combined_plot
 
 # ALL SHOTS HEATMAP
-cellsize <- c(3, 3)
+cellsize <- c(5, 5)
 
 # Create a bounding box representing the court
 court_bbox <- st_bbox(load_court()) %>% 
