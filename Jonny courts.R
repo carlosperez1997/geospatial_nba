@@ -66,13 +66,13 @@ ggplot(data = shots_data_sf, aes(x = shot_distances, y = as.numeric(SHOT_MADE)))
 # HEAT MAP
 ################################################################################
 shots_2010_curry <- shots_data %>%
-  filter(SEASON_1 == 2010) %>%
+  filter(SEASON_1 == 2009) %>%
   filter(str_detect(PLAYER_NAME, "Stephen Curry"))
 
 steph_curry_2010 <- ggplot() +
   geom_sf(data = half_court, color = "black", fill = "transparent", linewidth= 1) +
-  geom_density_2d_filled(shots_2010_curry, mapping = aes(x = LOC_X, y = LOC_Y,fill = ..level..,), 
-                         contour_var = "ndensity", breaks = seq(0.1, 1.0, length.out = 10), alpha = .8)  + 
+  geom_density_2d_filled(shots_2010_curry, mapping = aes(x = LOC_X, y = LOC_Y,fill = ..level..,),  adjust = 1,
+                         contour_var = "ndensity", breaks = seq(0.1, 1.0, length.out = 10), alpha = .8)  +
   scale_x_continuous(limits = c(-27.5, 27.5)) + 
   scale_y_continuous(limits = c(0, 45)) +
   theme(legend.position = "none", 
@@ -85,8 +85,6 @@ steph_curry_2010 <- ggplot() +
         panel.grid.minor = element_blank(),
         panel.background = element_blank())
 steph_curry_2010
-  
-
 
 
 
