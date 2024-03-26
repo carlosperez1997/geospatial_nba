@@ -65,7 +65,7 @@ load_court <- function(rotate=F) {
   if (rotate) {
     st_geometry(court_lines_in) * matrix(c(0, -1, 1, 0), ncol = 2) -> court_lines_right_rotated
   } else {
-    court_lines_rotated <- st_geometry(court_lines_in)
+    court_lines_right_rotated <- st_geometry(court_lines_in)
   }
   
   # Convert back to sf dataframe

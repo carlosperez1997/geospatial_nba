@@ -67,5 +67,16 @@ court_plot +
         plot.title = element_text(hjust = 0.5, size = 20), 
         legend.position = "bottom", legend.direction = "horizontal", legend.box = "horizontal")
 
+# SCORES
+
+unique(data$SHOT_TYPE)
+
+scores <- data[SHOT_MADE == T] %>% 
+  mutate(points = if_else(SHOT_TYPE == "2PT Field Goal", 2, 
+                          if_else(SHOT_TYPE == "3PT Field Goal", 3, 0)))
+scores
+
+
+
 
 
