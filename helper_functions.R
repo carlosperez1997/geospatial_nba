@@ -32,3 +32,58 @@ get_moment_info <- function(quarter, id_play, moment, ball_positions, players_po
   
   return(list(ball_positions, players_positions))
 }
+
+load_court <- function(rotate=F) {
+  DATA_DIR <- "./data"
+  court_lines_in <- st_read(file.path(DATA_DIR, "nba-court-lines-05feb2024.gpkg"),  layer = "nba-court-lines-05feb2024")
+  court_lines_in <- court_lines_in[-1, ]
+  
+  # Make left side of court
+  # rotate 90 degrees
+  if (rotate) {
+    st_geometry(court_lines_in) * matrix(c(0, 1, -1, 0), ncol = 2) -> court_lines_rotated
+  } else {
+    court_lines_rotated <- st_geometry(court_lines_in)
+  }
+  
+  # Convert back to sf dataframe
+  court_left <- court_lines_in
+  for(i in 1:11) {
+    court_left$geom[i] <- court_lines_rotated[[i]]
+    if (rotate) {
+      court_left$geom[i] <- st_geometry(court_left$geom[i]) + c(0, 25) # shift up   
+    } else {
+      court_left$geom[i] <- st_geometry(court_left$geom[i])
+    }
+    court_left$Feature[i] <- paste0(court_left$Feature[i], " L")
+  }
+  
+  court_lines_rotated<-NULL
+  
+  # Make right side of court
+  # rotate 90 degrees
+  if (rotate) {
+    st_geometry(court_lines_in) * matrix(c(0, -1, 1, 0), ncol = 2) -> court_lines_right_rotated
+  } else {
+    court_lines_rotated <- st_geometry(court_lines_in)
+  }
+  
+  # Convert back to sf dataframe
+  court_right <- court_lines_in
+  for(i in 1:11) {
+    court_right$geom[i] <- court_lines_right_rotated[[i]] 
+    if (rotate) {
+      court_left$geom[i] <- st_geometry(court_left$geom[i]) + c(94, 25) # shift up   
+    } else {
+      court_left$geom[i] <- st_geometry(court_left$geom[i])
+    }
+    #court_right$geom[i] <- st_geometry(court_right$geom[i]) + c(94, 25) # shift up and right
+    court_right$Feature[i] <- paste0(court_right$Feature[i], " R")
+  }
+  
+  court_lines_right_rotated<-NULL
+  
+  # Full court
+  full_court <- bind_rows(court_left, court_right)
+  return(full_court)
+}
