@@ -10,7 +10,6 @@ library(paletteer)
 library(stringr)
 library(lubridate)
 library(gridExtra)
-source("helper_functions.R")
 
 # Directory
 DATA_DIR <- "./data"
@@ -26,12 +25,12 @@ half_court <- full_court[-1, ]
 # Create the basketball court plot
 court_plot <- ggplot() +
   geom_sf(data = half_court, color = "black", fill = "transparent", 
-          linewidth= 1)  # Increase line thickness here
+          linewidth= 1)  
 court_plot 
 
 # Load shots data
 shots_data <- data.table()
-for (year in 2004:2005) {
+for (year in 2004:2019) {
   
   file_name <- sprintf("NBA_%d_Shots.csv", year)
   year_data <- fread(file.path(DATA_DIR, file_name))
@@ -42,17 +41,15 @@ for (year in 2004:2005) {
 # Make SF point object
 shots_data_sf <- st_as_sf(shots_data, coords = c("LOC_X", "LOC_Y"), crs = st_crs(half_court))
 
+
+
 ## Identify shots in the restricted area
 ################################################################################
 
 # The restricted area is currently just a semi circle, so we need to connect the
-# end points
+# end points in order to make it a polygon
 r_a <- half_court %>%
   filter(Feature=="Restricted area")
-
-# Create back line
-back_line <- st_sfc(st_linestring(matrix(c(-4, 4, 4, 4), ncol = 2, byrow = TRUE)), crs = st_crs(r_a))
-r_a <- st_union(r_a, back_line) # Combine them
 
 # Create polygon from coordinates
 r_a_coords <- st_coordinates(r_a) # Extract coordinates
@@ -74,9 +71,151 @@ shots_data$inside_r_a <- as.integer(lengths(inside_r_a) > 0)
 
 ## Identify shots just behind the 3 point line
 ################################################################################
+# We need to make the 3 point line into a polygon to identify shots behind it
+tpl <- half_court %>%
+  filter(Feature=="3-point line")
+
+# Create polygon from coordinates
+tpl_coords <- st_coordinates(tpl) # Extract coordinates
+tpl_coords <- rbind(tpl_coords, tpl_coords[1,]) # Make first and last point the same
 
 
-# HEAT MAP: per players
+tpl_polygon <- st_polygon(list(tpl_coords)) # Make polygon
+tpl_polygon <- st_zm(tpl_polygon) # Only keep x and y coords
+tpl_polygon <- st_make_valid(tpl_polygon)
+tpl_polygon_sf <- st_sf(geometry = st_sfc(tpl_polygon, crs = st_crs(tpl))) # make sf object
+
+# Identify shots within the 3 point line boundary
+inside_tpl <- st_within(shots_data_sf, tpl_polygon_sf)
+
+# Create_indicator
+shots_data_sf$inside_tpl <- as.integer(lengths(inside_tpl) > 0)
+shots_data$inside_tpl <- as.integer(lengths(inside_tpl) > 0)
+
+# Calculate distance to 3 point line
+tpl_distance <- as.numeric(st_distance(shots_data_sf, tpl)/100000)
+
+# Create indicator if shot closer than 3ft to 3 point line
+shots_data$tpl_shot <- as.integer(tpl_distance <= 3)
+shots_data_sf$tpl_shot <- as.integer(tpl_distance <= 3)
+
+# Set indicator to 0 if shot taken within 3 point line boundary
+shots_data <- shots_data %>%
+  mutate(tpl_shot = ifelse(inside_tpl == 1, 0, tpl_shot))
+
+shots_data_sf <- shots_data_sf %>%
+  mutate(tpl_shot = ifelse(inside_tpl == 1, 0, tpl_shot))
+
+
+# FIGURE 2.1: Court Scoring Areas
+################################################################################
+
+# Make outer polygon
+outer_polygon <- data.frame(
+  x = c(-25, -25, 25, 25, -25),
+  y = c(0, 90, 90, 0, 0)
+)
+
+outer_polygon  <- list(rbind(c(-25, 0), c(-25, 47), c(25,47), c(25, 0), c(-25, 0)))
+gm.outer_polygon  <- st_polygon(outer_polygon)
+gm.outer_polygon <- st_sfc(gm.outer_polygon, crs = st_crs(tpl))
+
+
+# Plot scoring regions
+ggplot() +
+  geom_sf(data = gm.outer_polygon, aes(fill = "3 points"), color = "black", linewidth = 1) +
+  geom_sf(data = tpl_polygon_sf, aes(fill = "2 points"), color = "black", linewidth = 1) +
+  geom_sf(data = half_court, color = "black", linewidth = 1) + # This remains unchanged
+  scale_fill_manual(name = "", values = c("3 points" = "deepskyblue3", "2 points" = "indianred")) +
+  theme(plot.title = element_text(hjust = 0.5, size = 20),
+        legend.position = "right",
+        legend.text = element_text(size = 12), # Adjust the text size in the legend
+        legend.key.size = unit(1.5, "cm"), # Adjust the size of the legend keys
+        axis.title.x = element_blank(), 
+        axis.title.y = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank())
+
+
+
+# FIGURE 4.1: Evolution of Attempted Shots by the 3 point line
+################################################################################
+tpl_shots_summary <- shots_data %>%
+  filter(inside_r_a != 1) %>%
+  group_by(SEASON_1, tpl_shot) %>%
+  summarise(Count = n(), .groups = 'drop') %>%
+  group_by(SEASON_1) %>%
+  mutate(Total = sum(Count),
+         Percentage = (Count / Total) * 100) %>%
+  ungroup()
+
+
+ggplot(tpl_shots_summary, aes(x = SEASON_1, y = Percentage, fill = as.factor(tpl_shot))) +
+  geom_bar(stat = "identity", position = "fill") + # 'position = fill' normalizes the bar heights to fill the plot area
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(name = "", values = c("#293352", "#4E84C4"), labels = c('Other', "3 Point Shot")) +
+  labs(title = "",
+       x = "Season",
+       y = "Percentage",
+       fill = NULL) + # Remove the legend title by setting fill to NULL in labs
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+
+# FIGURE 4.2: Shots attempts comparison between 2004 and 2019
+################################################################################
+outside_before <- shots_data %>% 
+  filter(SEASON_1 == 2004) %>%
+  filter(inside_r_a != 1)
+
+outside_now <- shots_data %>% 
+  filter(SEASON_1 == 2019) %>%
+  filter(inside_r_a != 1)
+
+before <- ggplot() +
+  geom_sf(data = half_court, color = "black", fill = "transparent", linewidth = 1) +
+  geom_density_2d_filled(outside_before, mapping = aes(x = LOC_X, y = LOC_Y, fill = ..level..), 
+                         contour_var = "ndensity", breaks = seq(0.1, 1.0, length.out = 50), alpha = .8) +
+  scale_x_continuous(limits = c(-27.5, 27.5)) + 
+  scale_y_continuous(limits = c(0, 45)) +
+  labs(title = 'Shots attempts 2004') + 
+  theme(legend.position = "none", 
+        plot.title = element_text(hjust = 0.5, size = 20), 
+        axis.title.x = element_blank(), 
+        axis.title.y = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank())
+
+now <- ggplot() +
+  geom_sf(data = half_court, color = "black", fill = "transparent", linewidth = 1) +
+  geom_density_2d_filled(outside_now, mapping = aes(x = LOC_X, y = LOC_Y, fill = ..level..), 
+                         contour_var = "ndensity", breaks = seq(0.1, 1.0, length.out = 50), alpha = .8) +
+  scale_x_continuous(limits = c(-27.5, 27.5)) + 
+  scale_y_continuous(limits = c(0, 45)) +
+  labs(title = 'Shots attempts 2019') + 
+  theme(legend.position = "none", 
+        plot.title = element_text(hjust = 0.5, size = 20), 
+        axis.title.x = element_blank(), 
+        axis.title.y = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank())
+
+side_by_side_plots <- grid.arrange(before, now, ncol = 2)
+print(side_by_side_plots)
+
+
+# FIGURE 4.3: MVPs shots heatmap
 ################################################################################
 # Define a function to create the plot for a player
 create_player_plot <- function(shots_data, year, player_name) {
@@ -118,57 +257,9 @@ player3 <- create_player_plot(shots_data, 2019, "Giannis Antetokounmpo")
 side_by_side_plots <- grid.arrange(player1, player2, player3, ncol = 3)
 print(side_by_side_plots)
 
-# HEAT MAP:  overall
-################################################################################
-outside_before <- shots_data %>% 
-  filter(SEASON_1 == 2004) %>%
-  filter(BASIC_ZONE != "Restricted Area")
-
-outside_now <- shots_data %>% 
-  filter(SEASON_1 == 2019) %>%
-  filter(BASIC_ZONE != "Restricted Area")
-  
-before <- ggplot() +
-  geom_sf(data = half_court, color = "black", fill = "transparent", linewidth = 1) +
-  geom_density_2d_filled(outside_before, mapping = aes(x = LOC_X, y = LOC_Y, fill = ..level..), 
-                         contour_var = "ndensity", breaks = seq(0.1, 1.0, length.out = 50), alpha = .8) +
-  scale_x_continuous(limits = c(-27.5, 27.5)) + 
-  scale_y_continuous(limits = c(0, 45)) +
-  labs(title = 'Shots attempts 2004') + 
-  theme(legend.position = "none", 
-        plot.title = element_text(hjust = 0.5, size = 20), 
-        axis.title.x = element_blank(), 
-        axis.title.y = element_blank(),
-        axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
-        axis.ticks = element_blank(),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        panel.background = element_blank())
-
-now <- ggplot() +
-  geom_sf(data = half_court, color = "black", fill = "transparent", linewidth = 1) +
-  geom_density_2d_filled(outside_now, mapping = aes(x = LOC_X, y = LOC_Y, fill = ..level..), 
-                         contour_var = "ndensity", breaks = seq(0.1, 1.0, length.out = 50), alpha = .8) +
-  scale_x_continuous(limits = c(-27.5, 27.5)) + 
-  scale_y_continuous(limits = c(0, 45)) +
-  labs(title = 'Shots attempts 2019') + 
-  theme(legend.position = "none", 
-        plot.title = element_text(hjust = 0.5, size = 20), 
-        axis.title.x = element_blank(), 
-        axis.title.y = element_blank(),
-        axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
-        axis.ticks = element_blank(),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        panel.background = element_blank())
-
-side_by_side_plots <- grid.arrange(before, now, ncol = 2)
-print(side_by_side_plots)
 
 
-# ACCEPTANCE RATE:  Curry
+# FIGURE 4.4: Stephen Curry shots and shooting percentage in 2016
 ################################################################################
 shots_curry <- shots_data %>%
   filter(SEASON_1 == 2016) %>%

@@ -26,7 +26,7 @@ half_court <- full_court[-1, ]
 # Create the basketball court plot
 court_plot <- ggplot() +
   geom_sf(data = half_court, color = "black", fill = "transparent", 
-          linewidth= 1)  # Increase line thickness here
+          linewidth= 1)  
 court_plot 
 
 # Load shots data
@@ -50,13 +50,9 @@ shots_data_sf <- st_as_sf(shots_data, coords = c("LOC_X", "LOC_Y"), crs = st_crs
 r_a <- half_court %>%
   filter(Feature=="Restricted area")
 
-# Create back line
-back_line <- st_sfc(st_linestring(matrix(c(-4, 4, 4, 4), ncol = 2, byrow = TRUE)), crs = st_crs(r_a))
-r_a <- st_union(r_a, back_line) # Combine them
-
 # Create polygon from coordinates
 r_a_coords <- st_coordinates(r_a) # Extract coordinates
-r_a_coords <- rbind(r_a_coords, r_a_coords[1,]) # Make first and last the same
+r_a_coords <- rbind(r_a_coords, r_a_coords[1,]) # Make first and last point the same
 
 
 r_a_polygon <- st_polygon(list(r_a_coords)) # Make polygon
@@ -72,8 +68,6 @@ shots_data_sf$inside_r_a <- as.integer(lengths(inside_r_a) > 0)
 shots_data$inside_r_a <- as.integer(lengths(inside_r_a) > 0)
 
 
-## Identify shots just behind the 3 point line
-################################################################################
 
 
 # SHOT SUCESS RATE BY DISTANCE
