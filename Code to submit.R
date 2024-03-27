@@ -76,55 +76,8 @@ shots_data$inside_r_a <- as.integer(lengths(inside_r_a) > 0)
 ################################################################################
 
 
-# SHOT SUCESS RATE BY DISTANCE
+# HEAT MAP: per players
 ################################################################################
-# Extract the hoop location
-hoop_location <- half_court %>% 
-  filter(Feature == "Hoop") %>%
-  st_geometry()
-
-# Calculate distance to hoop
-shot_distances <- st_distance(shots_data_sf, hoop_location)
-shots_data_sf$shot_distances <- as.numeric(shot_distances/100000)
-
-# Plot shooting % versus shot distance (feet)
-ggplot(data = shots_data_sf, aes(x = shot_distances, y = as.numeric(SHOT_MADE))) +
-  geom_smooth(color = "red") +
-  scale_y_continuous(
-    breaks = seq(from = 0, to = 1, by = 0.1),
-    labels = scales::percent_format(accuracy = 1)) +
-  scale_color_manual(values = c("red")) +  
-  theme_classic() +
-  labs(
-    x = "Shot Distance (feet)",
-    y = "Shooting Percentage "
-  )
-
-# HEAT MAP
-################################################################################
-shots_2010_curry <- shots_data %>%
-  filter(SEASON_1 == 2009) %>%
-  filter(str_detect(PLAYER_NAME, "Stephen Curry"))
-
-steph_curry_2010 <- ggplot() +
-  geom_sf(data = half_court, color = "black", fill = "transparent", linewidth= 1) +
-  geom_density_2d_filled(shots_2010_curry, mapping = aes(x = LOC_X, y = LOC_Y,fill = ..level..,),  adjust = 1,
-                         contour_var = "ndensity", breaks = seq(0.1, 1.0, length.out = 10), alpha = .8)  +
-  scale_x_continuous(limits = c(-27.5, 27.5)) + 
-  scale_y_continuous(limits = c(0, 45)) +
-  labs(title = "Stephen Curry - 2016") + 
-  theme(legend.position = "none", 
-        plot.title = element_text(hjust = 0.5, size = 20), 
-        axis.title.x = element_blank(), 
-        axis.title.y = element_blank(),
-        axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
-        axis.ticks = element_blank(),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        panel.background = element_blank())
-steph_curry_2010
-
 # Define a function to create the plot for a player
 create_player_plot <- function(shots_data, year, player_name) {
   
@@ -165,7 +118,8 @@ player3 <- create_player_plot(shots_data, 2019, "Giannis Antetokounmpo")
 side_by_side_plots <- grid.arrange(player1, player2, player3, ncol = 3)
 print(side_by_side_plots)
 
-## OVERALL 
+# HEAT MAP:  overall
+################################################################################
 outside_before <- shots_data %>% 
   filter(SEASON_1 == 2004) %>%
   filter(BASIC_ZONE != "Restricted Area")
@@ -213,65 +167,9 @@ now <- ggplot() +
 side_by_side_plots <- grid.arrange(before, now, ncol = 2)
 print(side_by_side_plots)
 
-######
-# PLAYOFFS
-# Convert GAME_DATE to Date format
-shots_data$GAME_DATE <- as.Date(shots_data$GAME_DATE, format = "%Y-%m-%d")
-shots_data$MONTH <- month(shots_data$GAME_DATE)
 
-normal_season <- shots_data %>%
-  filter(SEASON_1 == 2018) %>%
-  filter(MONTH <= 6) %>%
-  filter(BASIC_ZONE != "Restricted Area")
-
-playoffs <- shots_data %>%
-  filter(SEASON_1 == 2018) %>%
-  filter(MONTH > 6) %>%
-  filter(BASIC_ZONE != "Restricted Area")
-
-dim(normal_season)
-dim(playoffs)
-
-plot_normal <- ggplot() +
-  geom_sf(data = half_court, color = "black", fill = "transparent", linewidth = 1) +
-  geom_density_2d_filled(normal_season, mapping = aes(x = LOC_X, y = LOC_Y, fill = ..level..), 
-                         contour_var = "ndensity", breaks = seq(0.1, 1.0, length.out = 20), alpha = .8) +
-  scale_x_continuous(limits = c(-27.5, 27.5)) + 
-  scale_y_continuous(limits = c(0, 45)) +
-  labs(title = 'Shots attempts 2004') + 
-  theme(legend.position = "none", 
-        plot.title = element_text(hjust = 0.5, size = 20), 
-        axis.title.x = element_blank(), 
-        axis.title.y = element_blank(),
-        axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
-        axis.ticks = element_blank(),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        panel.background = element_blank())
-
-plot_playoffs <- ggplot() +
-  geom_sf(data = half_court, color = "black", fill = "transparent", linewidth = 1) +
-  geom_density_2d_filled(playoffs, mapping = aes(x = LOC_X, y = LOC_Y, fill = ..level..), 
-                         contour_var = "ndensity", breaks = seq(0.1, 1.0, length.out = 20), alpha = .8) +
-  scale_x_continuous(limits = c(-27.5, 27.5)) + 
-  scale_y_continuous(limits = c(0, 45)) +
-  labs(title = 'Shots attempts 2019') + 
-  theme(legend.position = "none", 
-        plot.title = element_text(hjust = 0.5, size = 20), 
-        axis.title.x = element_blank(), 
-        axis.title.y = element_blank(),
-        axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
-        axis.ticks = element_blank(),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        panel.background = element_blank())
-
-side_by_side_plots <- grid.arrange(plot_normal, plot_playoffs, ncol = 2)
-print(side_by_side_plots)
-
-# ACCEPT RATE
+# ACCEPTANCE RATE:  Curry
+################################################################################
 shots_curry <- shots_data %>%
   filter(SEASON_1 == 2016) %>%
   filter(str_detect(PLAYER_NAME, "Stephen Curry")) %>% 
