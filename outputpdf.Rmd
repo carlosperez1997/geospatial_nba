@@ -19,11 +19,56 @@ library(paletteer)
 library(stringr)
 library(lubridate)
 library(gridExtra)
-setwd("/Users/jonnycodd/Documents/MASTERS/Geo spacial/NBA Project")
+library(data.table)
+library(progress)
+tryCatch({
+    setwd("/Users/jonnycodd/Documents/MASTERS/Geo spacial/NBA Project")
+  }, error = function(e) {
+    print('Set working directory please...')
+  })
 
 # Directory
 DATA_DIR <- "./data"
 ```
+```{r}
+# HELPER FUNCTIONS
+################################################################################
+# BALL
+get_ball <- function(data) {
+  return(data.frame(x = data[3], y=data[4]))
+}
+
+# PLAYERS
+get_players <- function(data) {
+  return(data.frame(player_id=data[2:nrow(data),2], x = data[2:nrow(data),3], y=data[2:nrow(data),4]))
+}
+
+# PLAYERS
+get_players_info <- function(json_data) {
+  home_players <- json_data$events$home$players[[1]]
+  visitor_players <- json_data$events$visitor$players[[1]]
+  home_players$team <- "home"
+  visitor_players$team <- "visitor"
+
+  return(rbind(home_players, visitor_players))
+}
+
+# MOMENT INFO
+get_moment_info <- function(quarter, id_play, moment, ball_positions, players_positions) {
+  clock <- if (is.null(moment[[4]])) { 0 } else { moment[[4]] }
+  metadata <- data.frame(quarter = quarter, play_id = id_play,  moment_id = as.character(moment[[2]]), time=moment[[3]], clock=clock)
+  
+  ball_positions <- rbind(ball_positions, 
+                          cbind( metadata, get_ball(moment[[6]][1,]))
+  )
+  players_positions <- rbind(players_positions, 
+                             cbind(metadata, get_players(moment[[6]]))
+  )
+  
+  return(list(ball_positions, players_positions))
+}
+```
+
 
 ```{r, echo = TRUE, message = FALSE, warning = FALSE, results = 'hide', fig.show='hide'}
 # LOAD DATA
@@ -148,7 +193,119 @@ ggplot() +
         panel.grid.minor = element_blank(),
         panel.background = element_blank())
 
+# FIGURE 3.1: Kyrie Irving 2 point shoot GSE vs CLE 2016-01-18
+################################################################################
 
+# Read file
+json_data <- fromJSON(file.path(DATA_DIR, "0021500622.json"))
+
+# PLAYERS DATA
+players <- get_players_info(json_data)
+
+# PLAYS DATA
+plays <- json_data$events$moments
+
+# BALL + PLAYERS INIT
+  ball_positions <- data.frame(quarter=NULL, play_id=NULL, moment_id=NULL, 
+                               time=NULL, clock=NULL, x=NULL, y=NULL)
+  players_positions <- data.frame(quarter=NULL, play_id=NULL, moment_id=NULL, 
+                          time=NULL, clock=NULL, player_id=NULL, x=NULL, y=NULL)
+
+  # progress_bar
+  total_iterations <- length(plays)
+  
+  # Initialize progress bar
+  pb <- progress_bar$new(
+    format = "[:bar] :percent ETA: :eta",
+    total = total_iterations
+  )
+  for (id_play in seq(length(plays))) {
+    moments <- plays[[id_play]]
+    
+    # Add stop
+    if (id_play > 20) {
+      break
+    }
+    
+    if (length(moments) > 0) {
+      print(id_play)
+      for (id_moment in seq(length(moments))) {
+        
+        moment <- plays[[id_play]][[id_moment]]
+        
+        if (nrow(moment[[6]]) > 1) {
+          res <- get_moment_info(moment[[1]], id_play, moment, 
+                                 ball_positions, players_positions)
+          ball_positions <- res[[1]]
+          players_positions <- res[[2]]
+        }
+      }
+    }
+    pb$tick()
+  }
+
+  # Close progress bar
+  #pb$close()
+
+  play_id_ <- unique(ball_positions$play_id)[3]
+  play_ball <- ball_positions[ball_positions$play_id == play_id_,]
+  play_ball$group <- cumsum(c(0, diff(play_ball$x) < 0))
+  
+  # Create the initial plot with points
+  p <- ggplot() +
+    geom_point(data=play_ball, aes(x=x, y=y-25, group=group), color="orange", size=2)
+  
+  play_players <- players_positions[players_positions$play_id == play_id_,]
+  players_names <- NULL
+  # Loop through unique player IDs
+  for (player_id_ in unique(play_players$player_id)) {
+    print(player_id_)
+    # Get team of the player
+    team <- players[players$playerid == player_id_, ]$team
+    
+    # Get player name
+    player_name <- paste(players[players$playerid == player_id_, ]$firstname, players[players$playerid == player_id_, ]$lastname)
+    print(player_name)
+    
+    # Create a linestring for the player's trajectory
+    player_line <- play_players[play_players$player_id == player_id_,]
+    # Add a group identifier for each set of points
+    player_line$group <- cumsum(c(0, diff(player_line$x) < 0))
+    
+    # Determine color based on team
+    color <- ifelse(team == 'visitor', '#6F83FF', '#FF7E6F')
+    size <- 0.5
+    if (player_name == "Kyrie Irving") {
+      color = 'brown2'
+      size <- 1
+    }
+    
+    add <- player_line[as.integer(nrow(player_line)*1.0), ]
+    add$player_name <- player_name
+    add$color <- color
+    
+    if (is.null(players_names)) {
+      players_names <- add
+    } else {
+      players_names <- rbind(players_names, add)  
+    }
+    
+    # Add points for player paths
+    p <- p + geom_point(data = player_line, aes(x = x, y = y-25, group = group), color = color, size = size) 
+  }
+  
+  full_court <- st_read(file.path(DATA_DIR, "nba-court-lines-05feb2024.gpkg"), layer = "nba-court-lines-05feb2024")
+  full_court_ <- st_geometry(full_court) * matrix(c(0, 1, -1, 0), ncol = 2) 
+  
+  p2 <- p + 
+    geom_sf(data = full_court_, color = "black", fill = "transparent", linewidth= 1) +
+    theme_void() +
+    geom_text(data = players_names, aes(x = x, y = y- 25, label = player_name), 
+              color=players_names$color, vjust = -0.9, hjust = 0.7, size=5) +
+    ggtitle("Golden State Warrios vs Cleveland Cavaliers 2016-01-18 \nKyrie Irving 2 points") +
+    theme(plot.title = element_text(hjust = 0.5, size = 16, face = "bold"))
+  
+  p2
 
 # FIGURE 4.1: Evolution of Attempted Shots by the 3 point line
 ################################################################################
@@ -398,4 +555,3 @@ print(heatmap_plot)
 side_by_side_plots <- grid.arrange(scatter_plot, heatmap_plot, ncol = 2)
 print(side_by_side_plots)
 ```
-
